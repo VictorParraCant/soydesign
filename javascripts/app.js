@@ -8,7 +8,7 @@ $( document ).ready(function() {
   $('header').find('.flecha').off('click').on('click', function(e){
     e.preventDefault();
     var contenido = $(this).find('a').attr('href');
-    $.scrollTo( contenido, 900, {axis:'y', offset:0} );
+    $.scrollTo( contenido, 900, {axis:'y', offset:-70} );
   });
 
   $(window).scroll(function() {
@@ -22,9 +22,10 @@ $( document ).ready(function() {
 
   });
 
-  $('#descarga').click(function() {
-    $('.modal').modal('show');
+  $('#entrar').click(function() {
+    $('.modal-entrar').modal('show');
   });
-
-
+  $('#registrate').click(function() {
+    $('.modal-registrar').modal('show');
+  });
 });

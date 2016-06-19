@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./images/logo_cuadrado.png" type="image/x-icon" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="./stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="./javascripts/animatedModal.min.js"></script>
+    <script src="./javascripts/jquery.min.js"></script>
+    <script src="./javascripts/bootstrap.min.js"></script>
     <script src="./javascripts/jquery.scrollTo.min.js"></script>
     <script src="./javascripts/jquery.localScroll.min.js"></script>
     <script src="./javascripts/app.js"></script>
@@ -33,17 +33,77 @@
         </ul>
       </div>
       <div class="submenu">
-        <div class="registro"><a id="entrar" href="#">Entrar</a><a id="registrate" href="#">Registrate</a></div>
-        <div class="carro"><a href="#"><i id="carro" class="material-icons">&#xE8CC;</i></a></div>
-      </div>
-      <div class="regModal"><a href="#modalregistro"><i class="material-icons">&#xE5D2;</i></a>
-        <div id="modalregistro" class="modal">
-          <div class="modalContent"><a href="#"><i class="material-icons">&#xE5C4;</i></a>
-            <div class="registro"><a id="entrar" href="#">Entrar</a><a id="registrate" href="#">Registrate</a></div>
-            <div class="carro"><a href="#"><i id="carro" class="material-icons">&#xE8CC;</i></a></div>
+        <div class="registro"><a id="entrar" href="#" type="button" data-toggle="modal">Entrar</a>
+          <div tabindex="-1" role="dialog" aria-labelledby="Entrada" class="modal modal-entrar fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-flex">
+                  <div class="publi"><img src="./images/Inicio_simple.png"></div>
+                  <div class="inicio">
+                    <div class="modal-header">
+                      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                      <h4>Iniciar Sesión</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="social">
+                        <div class="face Modalboton"><i aria-hidden="true" class="fa fa-facebook"></i><a href="#">Ingresar con Facebook</a></div>
+                        <div class="tuit Modalboton"><i aria-hidden="true" class="fa fa-twitter"></i><a href="#">Ingresar con Twitter</a></div>
+                        <p>o </p>
+                      </div>
+                      <div class="login">
+                        <form>
+                          <input type="text" placeholder="Usuario">
+                          <input type="password" placeholder="Contraseña">
+                        </form><a id="olvidado" href="#">¿Olvidastes tu contraseña?</a>
+                        <div class="initBoton"><a href="#">Iniciar Sesión</a></div>
+                      </div>
+                      <div class="newlogin"> 
+                        <p>¿No tienes una cuenta?</p><a href="#">Únete ahora</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a id="registrate" href="#" type="button" data-toggle="modal">Registrate</a>
+          <div tabindex="-1" role="dialog" aria-labelledby="Registro" class="modal modal-registrar fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-flex">
+                  <div class="publi"><img src="./images/registro_simple.png"></div>
+                  <div class="inicio">
+                    <div class="modal-header">
+                      <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">&times;</span></button>
+                      <h4>Únete</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>
+                         
+                        Date a conocer, gana dinero y ayudanos<br>a dar a conecer el diseño grafico
+                      </p>
+                      <div class="social">
+                        <div class="face Modalboton"><i aria-hidden="true" class="fa fa-facebook"></i><a href="#">Ingresar con Facebook</a></div>
+                        <div class="tuit Modalboton"><i aria-hidden="true" class="fa fa-twitter"></i><a href="#">Ingresar con Twitter</a></div>
+                        <p>o </p>
+                      </div>
+                      <div class="login">
+                        <form>
+                          <input type="text" placeholder="Correo electrónico">
+                          <input type="text" placeholder="Nombre de usuario">
+                          <input type="password" placeholder="Contraseña">
+                        </form>
+                        <div class="initBoton"><a href="#">Iniciar Sesión</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="carro"><a href="#"><i id="carro" class="material-icons">&#xE8CC;</i></a></div>
       </div>
+      <div class="regModal"><a href="#modalregistro"><i class="material-icons">&#xE5D2;</i></a></div>
     </nav>
     <header id="inicio" class="principal">
       <div class="text">
@@ -169,7 +229,7 @@
           <p class="titulo">¿Quieres recibir la newsletter?</p>
           <div class="regist">
             <p>Se el primero en recibir las ultimas novedades</p>
-            <form class="form-inline">
+            <form class="form">
               <input type="text" id="registrar" placeholder="Correo electrónico"><a href="#">Regístrate</a>
             </form>
           </div>
