@@ -811,3 +811,185 @@ nav .regModal a {
   text-align: right;
   font-size: 0.7em;
 }
+.menu nav {
+  background-color: #fff;
+}
+.menu nav .links a {
+  color: #585654;
+}
+.menu nav .registrado {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu nav .registrado :hover {
+  color: #2ab6c7;
+}
+.menu nav .registrado a {
+  width: 50%;
+  text-decoration: none;
+}
+.menu nav .registrado .name {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu nav .registrado .name p {
+  font-size: 0.9em;
+  color: #585654;
+  padding: 0px 5%;
+}
+.menu nav .registrado i {
+  color: #2ab6c7;
+  padding: 5px 6%;
+}
+.menu nav .registrado #perfil {
+  width: 20%;
+  height: auto;
+}
+.menu nav .carro #carro {
+  color: #585654;
+}
+.contenido-perfil {
+  background-color: #e8e8ec;
+  height: 100vh;
+  width: auto;
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenido-perfil .perfil {
+  width: 85%;
+  background-color: #fff;
+  border: 1px solid #585654;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.contenido-perfil .perfil .editar {
+  width: 25%;
+}
+.contenido-perfil .perfil .editar .avatar {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: -45px 15% 10% 15%;
+}
+.contenido-perfil .perfil .editar .avatar img {
+  margin: 0px auto;
+  width: 80%;
+  border: 4px solid #fff;
+  border-radius: 5px;
+}
+.contenido-perfil .perfil .editar .avatar a {
+  margin-top: 15%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #2ab6c7;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #fff;
+}
+.contenido-perfil .perfil .editar .avatar a p {
+  padding: 0px 5px;
+  font-size: 0.9em;
+}
+.contenido-perfil .perfil .editar .avatar a i {
+  font-size: 1.4em;
+}
+.contenido-perfil .perfil .editar .avatar :hover {
+  background-color: #218f9d;
+  transition: all 0.5s;
+}
+.contenido-perfil .perfil .editar .social {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #585654;
+  border-top: 1px solid #585654;
+  width: 75%;
+  margin: 0px auto;
+  padding: 10px 0px;
+}
+.contenido-perfil .perfil .editar .social p {
+  font-size: 0.8em;
+  padding-bottom: 15px;
+  line-height: 24px;
+}
+.contenido-perfil .perfil .editar .social ul {
+  width: 100%;
+  padding: 5px 0px;
+}
+.contenido-perfil .perfil .editar .social ul li {
+  list-style-type: none;
+}
+.contenido-perfil .perfil .editar .social ul li a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: #585654;
+}
+.contenido-perfil .perfil .editar .social ul li a img {
+  width: 10%;
+  text-align: center;
+}
+.contenido-perfil .perfil .editar .social ul li a p {
+  width: 90%;
+  padding: 0px 5px;
+}
+.contenido-perfil .perfil .datos {
+  width: 75%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-bottom: 5%;
+}
+.contenido-perfil .perfil .datos .personales {
+  color: #585654;
+  padding-bottom: 60px;
+}
+.contenido-perfil .perfil .datos .personales h1 {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 30px 0px 5px 0px;
+}
+.contenido-perfil .perfil .datos .personales p {
+  padding: 0px;
+  font-size: 1em;
+  font-weight: 300;
+}
+.contenido-perfil .perfil .datos .archivos {
+  display: flex;
+  justify-content: space-around;
+}
+.contenido-perfil .perfil .datos .archivos .mensaje {
+  position: relative;
+  margin: 0px 2%;
+}
+.contenido-perfil .perfil .datos .archivos .mensaje p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(42,182,199,0.8);
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.7em;
+  transition: all 0.5s;
+}
+.contenido-perfil .perfil .datos .archivos .mensaje:hover p {
+  opacity: 1;
+}

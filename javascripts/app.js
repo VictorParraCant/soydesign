@@ -28,4 +28,8 @@ $( document ).ready(function() {
   $('#registrate').click(function() {
     $('.modal-registrar').modal('show');
   });
+  $('#bell').click(function() {
+    $('.modal-bell').modal('show');
+  });
+
 });
